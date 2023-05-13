@@ -1,3 +1,4 @@
+import AfterFooter from '@/components/AfterFooter';
 import BeforeHeader from '@/components/BeforeHeader';
 import BenefitsIcons from '@/components/BenefitsIcons';
 import Button from '@/components/Button';
@@ -6,6 +7,7 @@ import CardContent from '@/components/CardContent';
 import CardTitle from '@/components/CardTitle';
 import CaroulselBanner from '@/components/CaroulselBanner';
 import ContentImages from '@/components/ContentImages';
+import Footer from '@/components/Footer';
 import Header from '@/components/Header';
 import OfferCard from '@/components/OfferCard';
 import TitleSecton from '@/components/TitleSection';
@@ -60,6 +62,8 @@ export default function Home() {
         width={1980}
         height={800}
       />
+      <Footer />
+      <AfterFooter />
     </div>
   );
 }
