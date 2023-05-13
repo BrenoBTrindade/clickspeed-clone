@@ -15,7 +15,7 @@ export default function ContentImages() {
         {image.map((image) => (
           <Image
             key={image.src}
-            className="mb-2 mt-2 rounded-md shadow-md shadow-black max-2xl:ml-3 lg:h-52 lg:w-40 xl:ml-4 xl:h-56 xl:w-44"
+            className="mb-2 mt-2 rounded-md shadow-md shadow-black max-2xl:ml-3 lg:h-52 lg:w-40 xl:ml-4 xl:h-56 xl:w-44 2xl:ml-0 2xl:h-64 2xl:w-52"
             src={image.src}
             alt={image.link}
             width={204}

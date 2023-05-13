@@ -39,7 +39,7 @@ export default function CaroulselBanner() {
           <SwiperSlide key={i}>
             {' '}
             <Image
-              className="m-auto w-3/4 rounded-md max-2xl:w-11/12"
+              className="m-auto w-3/4 rounded-md shadow-lg shadow-black max-2xl:w-11/12"
               src={banner.src}
               alt={banner.link}
               width={1980}
