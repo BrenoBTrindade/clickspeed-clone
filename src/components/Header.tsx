@@ -1,10 +1,11 @@
 import Image from 'next/image';
+import Link from 'next/link';
 
 const links = [
-  { name: 'QUEM SOMOS', link: '#' },
-  { name: 'NOSSOS PLANOS', link: '#' },
-  { name: 'lOCALIZAÇÃO', link: '#' },
-  { name: 'INDIQUE E GANHE', link: '#' },
+  { name: 'QUEM SOMOS', link: 'https://clickspeednet.com.br/quem-somos/' },
+  { name: 'NOSSOS PLANOS', link: 'https://clickspeednet.com.br/nossos-planos/' },
+  { name: 'lOCALIZAÇÃO', link: 'https://clickspeednet.com.br/localizacao/' },
+  { name: 'INDIQUE E GANHE', link: 'https://clickspeednet.com.br/indique-e-ganhe/' },
 ];
 
 export default function Header() {
@@ -27,9 +28,12 @@ export default function Header() {
             ))}
           </ul>
         </div>
-        <button className=" mt-2 h-12 w-44 rounded-md bg-purple-900 p-3 text-sm font-bold text-white shadow-md shadow-gray-700 duration-500 hover:cursor-pointer hover:bg-red-500">
+        <Link
+          href={'https://sgp.clickspeed.net.br/accounts/central/login'}
+          className=" mt-2 h-12 w-44 rounded-md bg-purple-900 p-4 text-center text-sm font-bold text-white shadow-md shadow-gray-700 duration-500 hover:cursor-pointer hover:bg-red-500"
+        >
           ÁREA DO CLIENTE
-        </button>
+        </Link>
       </div>
     </nav>
   );
