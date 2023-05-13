@@ -10,9 +10,9 @@ const links = [
 export default function FooterInfo() {
   return (
     <>
-      <div className="flex w-[25%] flex-col">
+      <div className="flex w-[25%] flex-col max-md:-ml-5 max-md:w-full max-md:items-center">
         <Image
-          className="mb-5 h-16 w-60 rounded-md bg-purple-950 p-1 shadow-md shadow-gray-700"
+          className="mb-5 h-16 w-60 rounded-md bg-purple-950 p-1 shadow-md shadow-gray-700 max-md:h-20 max-md:w-72"
           src={'/logo-white-click.png'}
           alt="clickspeed logo white"
           width={200}
@@ -22,9 +22,11 @@ export default function FooterInfo() {
           Provedor de Internet. O melhor da internet na sua casa.
         </p>
       </div>
-      <div className="w-[25%] flex-col font-semibold">
-        <p className="ml-3 text-left font-bold">OUTROS LINKS</p>
-        <ul className="flex flex-col items-start">
+      <div className="w-[25%] flex-col font-semibold max-md:w-full max-md:items-center">
+        <p className="ml-3 text-left font-bold max-md:-ml-5 max-md:mt-5 max-md:text-center">
+          OUTROS LINKS
+        </p>
+        <ul className="flex flex-col items-start max-md:-ml-5 max-md:items-center max-md:text-xs">
           {links.map((link) => (
             <li className="p-3 opacity-60 hover:opacity-100" key={link.name}>
               <a href={link.link}>{link.name}</a>

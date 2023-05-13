@@ -37,7 +37,7 @@ export default function Home() {
       <ContentImages />
       <div className="w-3/5">
         <TitleSecton />
-        <div className=" flex w-1/4 justify-center">
+        <div className=" flex w-1/4 justify-center max-md:flex-col">
           <Card>
             <CardTitle speed="350 MB" price="99,90/Mês" />
             <CardContent />

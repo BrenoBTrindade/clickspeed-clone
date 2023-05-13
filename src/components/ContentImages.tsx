@@ -10,8 +10,8 @@ const image = [
 
 export default function ContentImages() {
   return (
-    <div className=" m-auto mt-5 flex h-80 w-[85%] items-center justify-center rounded-md bg-purple-950 p-5 shadow-md shadow-gray-500 hover:border-b-purple-950">
-      <div className="flex w-[80%] justify-evenly">
+    <div className=" m-auto mt-5 flex h-80 w-[85%] items-center justify-center rounded-md bg-purple-950 p-5 shadow-md shadow-gray-500 hover:border-b-purple-950 max-md:h-full max-md:w-full max-md:rounded-none">
+      <div className="flex w-[80%] justify-evenly max-md:flex-col max-md:items-center">
         {image.map((image) => (
           <Image
             key={image.src}
