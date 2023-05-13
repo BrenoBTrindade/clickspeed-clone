@@ -16,7 +16,7 @@ const imageBanner = [
 export default function CaroulselBanner() {
   return (
     <div
-      className="m-auto h-[430px] w-[85%] select-none rounded-md bg-purple-950 p-5 shadow-md shadow-gray-500
+      className="m-auto h-[430px] w-[85%] select-none rounded-md bg-purple-950 p-5 shadow-md shadow-gray-500 max-2xl:h-[380px]
     "
     >
       <Swiper
@@ -39,7 +39,7 @@ export default function CaroulselBanner() {
           <SwiperSlide key={i}>
             {' '}
             <Image
-              className="m-auto w-3/4 rounded-md"
+              className="m-auto w-3/4 rounded-md max-2xl:w-11/12"
               src={banner.src}
               alt={banner.link}
               width={1980}
