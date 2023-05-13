@@ -9,13 +9,14 @@ import { Pagination, Navigation, Autoplay } from 'swiper';
 const imageBanner = [
   { src: '/BANNER-SITE.jpg', link: '#' },
   { src: '/BANNER-TOPO-01-1.jpg', link: '#' },
+  { src: '/BANNER-TOPO-02-1.jpg', link: '#' },
   { src: '/BANNER-TOPO-03-1.jpg', link: '#' },
 ];
 
 export default function CaroulselBanner() {
   return (
     <div
-      className="m-auto h-[430px] w-[85%] select-none rounded-md bg-purple-950 p-5 shadow-md shadow-gray-700
+      className="m-auto h-[430px] w-[85%] select-none rounded-md bg-purple-950 p-5 shadow-md shadow-gray-500
     "
     >
       <Swiper
