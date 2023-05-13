@@ -8,6 +8,9 @@ import CardTitle from '@/components/CardTitle';
 import CaroulselBanner from '@/components/CaroulselBanner';
 import ContentImages from '@/components/ContentImages';
 import Footer from '@/components/Footer';
+import FooterInfo from '@/components/FooterInfo';
+import FooteriNetworks from '@/components/FooterNetworks';
+import FooterSuport from '@/components/FooterSuport';
 import Header from '@/components/Header';
 import OfferCard from '@/components/OfferCard';
 import TitleSecton from '@/components/TitleSection';
@@ -62,7 +65,12 @@ export default function Home() {
         width={1980}
         height={800}
       />
-      <Footer />
+      <Footer>
+        <FooterInfo />
+        <FooterSuport>
+          <FooteriNetworks />
+        </FooterSuport>
+      </Footer>
       <AfterFooter />
     </div>
   );
