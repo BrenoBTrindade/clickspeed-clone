@@ -14,6 +14,7 @@ import FooterSuport from '@/components/FooterSuport';
 import Header from '@/components/Header';
 import LocalizationImage from '@/components/LocalizationImage';
 import LocalizationImageMobile from '@/components/LocalizationImageMobile';
+import NavMenu from '@/components/NavMenu';
 import OfferCard from '@/components/OfferCard';
 import TitleSecton from '@/components/TitleSection';
 import ButtonOffer from '@/components/buttonOffer';
@@ -34,6 +35,7 @@ export default function Home() {
     <main className="w-full overflow-x-hidden">
       <BeforeHeader />
       <Header />
+      <NavMenu />
       <CaroulselBanner />
       <ContentImages />
       <div className="w-3/5 max-md:w-full">
