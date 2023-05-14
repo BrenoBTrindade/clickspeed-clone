@@ -12,10 +12,11 @@ import FooterInfo from '@/components/FooterInfo';
 import FooteriNetworks from '@/components/FooterNetworks';
 import FooterSuport from '@/components/FooterSuport';
 import Header from '@/components/Header';
+import LocalizationImage from '@/components/LocalizationImage';
+import LocalizationImageMobile from '@/components/LocalizationImageMobile';
 import OfferCard from '@/components/OfferCard';
 import TitleSecton from '@/components/TitleSection';
 import ButtonOffer from '@/components/buttonOffer';
-import Image from 'next/image';
 
 const Icons1 = [{ src: '/4.png' }, { src: '/3.png' }];
 const Icons2 = [{ src: '/4.png' }, { src: '/3.png' }, { src: '/5.png' }, { src: '/2.png' }];
@@ -30,14 +31,14 @@ const Icons3 = [
 
 export default function Home() {
   return (
-    <div className="w-full">
+    <main className="w-full overflow-x-hidden">
       <BeforeHeader />
       <Header />
       <CaroulselBanner />
       <ContentImages />
-      <div className="w-3/5">
+      <div className="w-3/5 max-md:w-full">
         <TitleSecton />
-        <div className=" flex w-1/4 justify-center max-md:flex-col">
+        <div className=" flex w-1/4 justify-center max-md:flex-col max-md:items-center">
           <Card>
             <CardTitle speed="350 MB" price="99,90/Mês" />
             <CardContent />
@@ -58,13 +59,8 @@ export default function Home() {
           </Card>
         </div>
       </div>
-      <Image
-        className="m-auto mt-16 h-[100%] w-[85%] rounded-md shadow-md shadow-gray-700"
-        src={'/BANNER-FINAL.jpg'}
-        alt="apresentacao"
-        width={1980}
-        height={800}
-      />
+      <LocalizationImage />
+      <LocalizationImageMobile />
       <Footer>
         <FooterInfo />
         <FooterSuport>
@@ -72,6 +68,6 @@ export default function Home() {
         </FooterSuport>
       </Footer>
       <AfterFooter />
-    </div>
+    </main>
   );
 }
