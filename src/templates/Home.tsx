@@ -6,6 +6,7 @@ import Card from '@/components/Card';
 import CardContent from '@/components/CardContent';
 import CardTitle from '@/components/CardTitle';
 import CaroulselBanner from '@/components/CaroulselBanner';
+import CaroulselBannerMobile from '@/components/CaroulselBannerMobile';
 import ContentImages from '@/components/ContentImages';
 import Footer from '@/components/Footer';
 import FooterInfo from '@/components/FooterInfo';
@@ -37,6 +38,7 @@ export default function Home() {
       <Header />
       <NavMenu />
       <CaroulselBanner />
+      <CaroulselBannerMobile />
       <ContentImages />
       <div className="w-3/5 max-md:w-full">
         <TitleSecton />

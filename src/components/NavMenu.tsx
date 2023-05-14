@@ -19,7 +19,7 @@ export default function NavMenu() {
   };
 
   return (
-    <nav className="hidden max-md:block">
+    <nav className="mt-2 hidden max-md:block">
       <div className="flex w-full justify-between">
         <Image
           className="ml-2 h-10 w-40 "
@@ -40,7 +40,7 @@ export default function NavMenu() {
           </div>
           <div>
             {showDropdown && (
-              <ul className="absolute left-0 h-52 w-full bg-purple-800">
+              <ul className="absolute left-0 z-10 h-52 w-full bg-purple-800">
                 {links.map((link, index) => (
                   <li className=" ml-5 mt-5 text-left text-white" key={index}>
                     <Link href={link.link}>{link.name}</Link>
