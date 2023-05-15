@@ -22,7 +22,7 @@ export default function CaroulselBannerMobile() {
         loop={true}
         autoplay={{
           delay: 5000,
-          disableOnInteraction: false,
+          disableOnInteraction: true,
         }}
         speed={1000}
         pagination={{
