@@ -24,6 +24,7 @@ export default function CaroulselBannerMobile() {
           delay: 5000,
           disableOnInteraction: false,
         }}
+        speed={1000}
         pagination={{
           clickable: true,
         }}

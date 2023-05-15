@@ -25,15 +25,15 @@ export default function CaroulselBanner() {
         loop={true}
         autoplay={{
           delay: 5000,
-          disableOnInteraction: false,
+          disableOnInteraction: true,
         }}
+        speed={1000}
         pagination={{
           clickable: true,
         }}
         navigation={true}
         modules={[Pagination, Navigation, Autoplay]}
-        autoHeight
-        className="rounded-md"
+        autoHeight={false}
       >
         {imageBanner.map((banner, i) => (
           <SwiperSlide key={i}>
