@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 'use client';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import Image from 'next/image';
@@ -38,7 +39,7 @@ export default function CaroulselBanner() {
         {imageBanner.map((banner, i) => (
           <SwiperSlide key={i}>
             {' '}
-            <Image
+            <img
               className="m-auto w-3/4 rounded-md shadow-lg shadow-black max-2xl:w-11/12"
               src={banner.src}
               alt={banner.link}
