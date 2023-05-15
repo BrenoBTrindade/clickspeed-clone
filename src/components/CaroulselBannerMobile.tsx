@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 'use client';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import Image from 'next/image';
@@ -35,7 +36,7 @@ export default function CaroulselBannerMobile() {
         {imageBanner.map((banner, i) => (
           <SwiperSlide key={i}>
             {' '}
-            <Image
+            <img
               className=" m-auto mt-7 h-[450px] w-[320px] rounded-md shadow-md shadow-black"
               src={banner.src}
               alt={banner.link}
