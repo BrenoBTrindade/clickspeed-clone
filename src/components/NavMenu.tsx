@@ -19,7 +19,7 @@ export default function NavMenu() {
   };
 
   return (
-    <nav className="mt-2 hidden max-md:block">
+    <nav className="mt-2 hidden max-lg:block">
       <div className="flex w-full justify-between">
         <Image
           className="ml-2 h-10 w-40 "

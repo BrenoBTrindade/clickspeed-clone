@@ -42,7 +42,7 @@ export default function Home() {
       <ContentImages />
       <div className="w-3/5 max-md:w-full">
         <TitleSecton />
-        <div className=" flex w-1/4 justify-center max-md:flex-col max-md:items-center">
+        <div className=" flex w-1/4 justify-center max-lg:flex-col max-lg:items-center">
           <Card>
             <CardTitle speed="350 MB" price="99,90/Mês" />
             <CardContent />

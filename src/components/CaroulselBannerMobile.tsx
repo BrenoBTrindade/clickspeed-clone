@@ -16,7 +16,7 @@ const imageBanner = [
 
 export default function CaroulselBannerMobile() {
   return (
-    <div className="m-auto mb-5 mt-5 hidden h-[510px] w-[95%] select-none rounded-md bg-purple-950 shadow-md shadow-gray-700 max-md:block">
+    <div className="m-auto mb-5 mt-5 hidden h-[510px] w-[95%] select-none rounded-md bg-purple-950 shadow-md shadow-gray-700 max-lg:block max-lg:w-[85%]">
       <Swiper
         slidesPerView={1}
         spaceBetween={30}
