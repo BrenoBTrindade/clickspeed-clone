@@ -17,7 +17,7 @@ const imageBanner = [
 export default function CaroulselBanner() {
   return (
     <div
-      className="m-auto h-[430px] w-[85%] select-none rounded-md bg-purple-950 p-5 shadow-md shadow-gray-500 max-2xl:h-[380px] max-lg:hidden
+      className="animate-fadeInRight m-auto w-[85%] select-none rounded-md bg-purple-950 p-5 shadow-md shadow-gray-500 max-2xl:h-[380px] max-lg:hidden
     "
     >
       <Swiper
@@ -39,8 +39,9 @@ export default function CaroulselBanner() {
         {imageBanner.map((banner, i) => (
           <SwiperSlide key={i}>
             {' '}
-            <img
-              className="m-auto w-3/4 rounded-md shadow-lg shadow-black max-2xl:w-11/12"
+            <Image
+              loading='eager'
+              className="mx-auto -mt-3 w-3/4 rounded-md shadow-lg shadow-black max-2xl:w-11/12"
               src={banner.src}
               alt={banner.link}
               width={1980}

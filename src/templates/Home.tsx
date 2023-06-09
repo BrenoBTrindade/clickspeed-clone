@@ -40,9 +40,9 @@ export default function Home() {
       <CaroulselBanner />
       <CaroulselBannerMobile />
       <ContentImages />
-      <div className="w-3/5 max-md:w-full">
+      <div className="max-md:w-full rise animate-fadeInUp">
         <TitleSecton />
-        <div className=" flex w-1/4 justify-center max-lg:flex-col max-lg:items-center">
+        <div className="flex justify-center max-lg:flex-col max-lg:items-center">
           <Card>
             <CardTitle speed="350 MB" price="99,90/Mês" />
             <CardContent />
