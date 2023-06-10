@@ -17,7 +17,7 @@ const imageBanner = [
 export default function CaroulselBanner() {
   return (
     <div
-      className="animate-fadeInRight m-auto w-[85%] select-none rounded-md bg-purple-950 p-5 shadow-md shadow-gray-500 max-2xl:h-[380px] max-lg:hidden
+      className="animate-fadeInRight m-auto w-[85%] select-none rounded-md bg-purple-950 p-5 shadow-md shadow-gray-500 max-2xl:h-fit max-lg:hidden
     "
     >
       <Swiper
