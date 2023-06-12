@@ -10,7 +10,7 @@ const links = [
 
 export default function Header() {
   return (
-    <nav className=" flex items-center justify-center  max-lg:hidden max-md:w-full">
+    <nav className=" flex items-center justify-center  max-lg:hidden max-md:w-full ">
       <div className=" text-md flex w-full justify-around font-semibold text-purple-950 max-2xl:mb-1 max-2xl:w-[85%] max-2xl:text-sm max-md:w-full">
         <Image
           className="m-0 mt-2 h-10 w-40 max-2xl:-ml-10 max-md:h-12 max-md:w-52"
